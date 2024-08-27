@@ -1,0 +1,155 @@
+
+  .container {
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .container .box {
+    position: relative;
+    width: 275px;
+    height: 275px;
+    background: #000;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    margin-right: 15px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+  .container:hover .box {
+    transform: rotateY(25deg);
+  }
+  .container .box:hover ~ .box {
+    transform: rotateY(-25deg);
+  }
+  .container .box:hover {
+    transform: rotateY(0deg) scale(1.25);
+    z-index: 1;
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+  }
+  .container .box .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .container .box .imgBx:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg,#2DD4BF,#000);
+    z-index: 1;
+    opacity: 0;
+    transition: 0.5s;
+    mix-blend-mode: multiply;
+  }
+  .container .box:hover .imgBx:before {
+    opacity: 1;
+  }
+  .container .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .container .box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
+    box-sizing: border-box;
+  }
+  .container .box .content h2 {
+    color: #fff;
+    transition: 0.5s;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 20px;
+    transform: translateY(200px);
+    transition-delay: 0.3s;
+  }
+  .container .box:hover .content h2 {
+    transform: translateY(0px);
+  }
+  .container .box .content p {
+    color: #fff;
+    transition: 0.5s;
+    font-size: 14px;
+    transform: translateY(200px);
+    transition-delay: 0.4s;
+  }
+  .container .box:hover .content p {
+    transform: translateY(0px);
+  }
+
+/* Ensure these styles are included in the appropriate CSS file */
+
+.tab-container {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #ddd; /* Right border for separation */
+}
+
+.tab-button {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 2px solid #ddd; /* Bottom border for tab separation */
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transition for color changes */
+  background-color: transparent; /* Remove background color */
+  border-left: 5px solid transparent; /* Default left border for unselected tabs */
+  color: white; /* Default text color for unselected tabs */
+}
+
+.tab-button.selected {
+  border-left: 5px solid #2DD4BF; /* Red left edge for selected tab */
+  background-color: #f9f9f9; /* Optional: light background for the selected tab */
+  color: black; /* Text color for the selected tab */
+}
+
+.tab-content {
+  flex: 1;
+  padding: 20px;
+  color: white;
+  border-left: none; /* Remove left border for the content area */
+}
+
+/* SplashScreen.css */
+.tab-content ul {
+  list-style: none; /* Remove default bullets */
+  padding-left: 0; /* Remove default padding */
+}
+
+.tab-content li {
+  position: relative; /* Position relative to allow absolute positioning of the triangle */
+  padding-left: 30px; /* Space for the triangle */
+  margin-bottom: 10px; /* Optional: space between list items */
+}
+
+.tab-content li::before {
+  content: ""; /* Empty content for the pseudo-element */
+  position: absolute;
+  left: 0; /* Position the triangle on the left side */
+  top: 50%; /* Center the triangle vertically */
+  transform: translateY(-50%); /* Center the triangle vertically */
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent; /* Transparent top border */
+  border-bottom: 10px solid transparent; /* Transparent bottom border */
+  border-left: 10px solid #2DD4BF; /* Green left border forms the triangle */
+}
+
