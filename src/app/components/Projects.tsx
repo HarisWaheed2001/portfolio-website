@@ -51,8 +51,8 @@ const Projects = ({forwardedRef}) => {
                         rel="noopener noreferrer"
                         className="project-box bg-white w-full p-6 m-4 shadow-lg transition-transform transform hover:scale-105 hover:bg-light-blue-400"
                     >
-                        <h3 className="text-xl font-bold mb-2 text-teal-400">{project.title}</h3>
-                        <p className="text-xs font-bold">{project.time}</p>
+                        <h3 className="text-xl font-bold mb-2 text-black">{project.title}</h3>
+                        <p className="text-xs font-bold text-gray-400">{project.time}</p>
                         <p className="text-sm">{project.description}</p>
                     </a>
                 ))}

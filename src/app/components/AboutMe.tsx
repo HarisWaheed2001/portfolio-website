@@ -17,8 +17,8 @@ const AboutMe = ({forwardedRef}) => {
             </div>
             <div className ="lg:flex lg:flex-row">
                 <div>
-                    <p className="text-white text-md p-4">Hello! My name is Haris and I enjoy creating things that live on the internet. My interest in web development started in my childhood, customizing a Squarespace website with Javascript and HTML - turns out hacking together a modal taught me a lot about Javascript, HTML and CSS!</p>
-                    <p className="text-white text-md p-4">Fast-forward to today and I have had the privilege of working at an fintech corporation, construction SAAS, interational education SAAS, and 2 start-ups. My main focus these days getting a full-time position as software developer since I recently graduated.</p>
+                    <p className="text-white text-md p-4">Hello! My name is Haris and I enjoy creating things that live on the internet. My interest in web development started in my childhood customizing a Squarespace website with Javascript and HTML - turns out hacking together a modal taught me a lot about Javascript, HTML and CSS!</p>
+                    <p className="text-white text-md p-4">Fast-forward to today and I have had the privilege of working at an fintech corporation, construction SAAS, interational education SAAS, and 2 start-ups. My main focus these days is getting a full-time position as software developer since I recently graduated.</p>
                     <p className="text-white text-md p-4">Here are a few technologies I’ve been working with recently:</p>
                     <div className="columns-2 p-4 text-white">
                         <div><p>Javascript</p><p>Next.js</p><p>MySQL</p></div>
@@ -28,7 +28,7 @@ const AboutMe = ({forwardedRef}) => {
                 <div className="container">
                 <div className="box">
                     <div className="imgBx">
-                        <img src="https://media.licdn.com/dms/image/v2/D5603AQF4SY61GdhVoQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1707515527085?e=1729728000&v=beta&t=lUU4SlbyWBG0rG5_kVqLBcr8tRM9wXMb2S5GnHGVZuA"/>
+                        <img src="https://media.licdn.com/dms/image/v2/D5603AQGxU7oB9zGA7g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724802691933?e=1730332800&v=beta&t=jbM5ERG_m52G-Iga3qvsI0Ls_-DccNiL_Ecp3e4TjlE"/>
                     </div>
                     <div className="content">
                         <div>
